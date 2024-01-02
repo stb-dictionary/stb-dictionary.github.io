@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 85rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0 0;
+  color: #e61b46;
+}
+
+header p, header img {
+  display: block;
+}
+
+header img {
+  max-width: 5rem;
+  width: 100%;
+  height: auto;
+}
+
+header p {
+  font-size: 1.75rem;
+  margin-left: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-top: 1rem;
+}
+
+aside, article {
+  border: 1px solid #ddd;
+}
+
+aside {
+  width: 25%;
+}
+
+article {
+  width: 75%;
+  border-left: none;
+  padding: 2rem;
+}
+
+aside ul {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  max-height: 37rem;
+}
+
+aside ul li {
+  list-style: none;
+  padding: 1rem 1rem 1rem;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+aside ul li:hover, aside ul li.active {
+  background-color: #e61b46;
+  color: #fff;
+  font-weight: 600;
+}
+
+article *:first-child {
+  margin-top: 0;
+}
+
+article h2 {
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+article iframe {
+  margin: 1rem auto 0;
+  display: block;
+  max-width: 60rem;
+  width: 100%;
+  height: 24rem;
+}
+
+article img {
+  margin: 1rem auto 0;
+  display: block;
+  max-width: 100%;
+}
+
+.copyright {
+  color: #5b5b5b;
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+
+form {
+  margin: 0;
+  position: relative;
+}
+
+input {
+  padding: 0.75rem 2.25rem 0.75rem 1rem;
+  width: 100%;
+  border: 1px solid #e61b46;
+  color: #e61b46;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #e61b46;
+}
+
+button {
+  background: transparent url(../pictures/search.png) no-repeat center center;
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 7px;
+  cursor: pointer;
+}
